@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        font-size: 16px;
+        width: 80vw;
+      }
+
+      header {
+        font-size: 150%; /* x% * parent's computed font-size 150% * 16px = 24px*/
+        padding: 2em; /* x * current element computed font-size 2 * 24px 48px*/
+        margin-bottom: 10rem;
+        height: 90vh;
+        width: 100px;
+      }
+      .header-child {
+        font-size: 3em; /* x * parent's computed font-size 3 * 24 = 73px */
+        padding: 10%; /* x% * parent's computed width 100px * 10% = 10px*/
+      }
+      /* 
+        rem: x*root element computed font-size 
+        vw vh: x * 1% * vewport width/height
+      */
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-child">header child</div>
+    </header>
+  </body>
+</html>
